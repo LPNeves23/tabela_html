@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        table {
+            width: 50%;
+        }
+
+        th {
+            background-color: aqua;
+        }
+
+        td {
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+
+<body>
+    <table style="margin: 20px auto; text-align: center;">
+        <caption>Tabela 1</caption>
+        <thead>
+            <tr>
+                <th colspan="2">Colspan = 2</th>
+                <th colspan="2">Colspan = 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Linha 1 Coluna1</td>
+                <td>Linha 1 Coluna 1</td>
+                <td>Linha1 1coluna 2</td>
+                <td>Linha 1 Coluna 2</td>
+            </tr>
+            <tr>
+                <td>Linha2 Coluna1</td>
+                <td>Linha 2 Coluna1</td>
+                <td>Linha 2 Coluna2</td>
+                <td>Linha 2 Coluna 2</td>
+            </tr>
+        </tbody>
+    </table>
+    <table style="margin: 20px auto; text-align: center;">
+        <caption>Tabela 2</caption>
+        <thead>
+            <tr>
+                <th colspan="4">Título da tabela com 4 Colspan</th>
+            </tr>
+            <tr>
+                <th colspan="2">Colspan = 2</th>
+                <th colspan="2">Colspan = 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Linha 1 Coluna1</td>
+                <td>Linha 1 Coluna1</td>
+                <td>Linha 1 Coluna2</td>
+                <td>Linha 1 Coluna2</td>
+            </tr>
+            <tr>
+                <td>Linha 2 Coluna1</td>
+                <td>Linha 2 Coluna1</td>
+                <td>Linha 2 Coluna2</td>
+                <td>Linha 2 Coluna2</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4" style="background-color: yellowgreen;"> Rodapé com 4 Colspan</td>
+            </tr>
+        </tfoot>
+    </table>
+    <table style="margin: 20px auto;">
+        <caption>Tabela 3</caption>
+        <thead>
+            <tr>
+                <th>Coluna1</th>
+                <th>Coluna2</th>
+                <th>Coluna3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Linha1 Coluna 1</td>
+                <td colspan="2">Linha1 Coluna 2 e 3</td>
+            </tr>
+            <tr>
+                <td>Linha1 Coluna 1</td>
+                <td colspan="2">Linha2 Coluna 2 e 3</td>
+            </tr>
+            <tr>
+                <td>Linha3 Coluna1</td>
+                <td>Linha 3 Coluna2</td>
+                <td>Linha 3 Coluna3</td>
+            </tr>
+        </tbody>
+    </table>
+    <table style="margin: 20px auto;">
+        <caption>Tabela 4</caption>
+        <thead>
+            <tr>
+                <th rowspan="2">Coluna vertical 2 rowspan</th>
+                <td>Linha1</td>
+            </tr>
+            <tr>
+                <td>Linha2</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Coluna vertical 2 rowspan</th>
+                <td>Linha3</td>
+            </tr>
+            <tr>
+                <td>Linha4</td>
+            </tr>
+        </thead>
+    </table>
+    <table style="margin: 20px auto;">
+        <caption>Tabela 5</caption>
+        <thead>
+            <tr>
+                <th>Coluna1
+                </th>
+                <th colspan="2">Coluna2</th>
+                <th colspan="2">Coluna3</th>
+            </tr>
+            <tr>
+                <th rowspan="3">Vertical 3 row</th>
+                <td>Linha 1 Coluna 2</td>
+                <td>Linha 1 Coluna 2</td>
+                <td>Linha 1 Coluna 3</td>
+                <td>Linha 1 Coluna 4</td>
+            </tr>
+            <tr>
+                <td>Linha 2 Coluna 2</td>
+                <td>Linha 2 Coluna 2</td>
+                <td>Linha 2 Coluna 3</td>
+                <td>Linha 2 Coluna 4</td>
+            </tr>
+            <tr>
+                <td>Linha 3 Coluna 2</td>
+                <td>Linha 3 Coluna 2</td>
+                <td>Linha 3 Coluna 3</td>
+                <td>Linha 3 Coluna 4</td>
+            </tr>
+        </thead>
+    </table>
+    <table style="margin: 20px auto;">
+        <caption>Tabela 6</caption>
+        <thead>
+            <tr>
+                <th colspan="2">Coluna1</th>
+                <th>Coluna2</th>
+                <th>Coluna3</th>
+                <th>Coluna4</th>
+            </tr>
+            <tr>
+            <th rowspan="4">Coluna vertical</th>
+            <th rowspan="2">Coluna vertical</th>
+            <td>Linha1 Coluna2</td>
+            <td>Linha1 Coluna3</td>
+            <td>Linha1 Coluna4</td>
+            </tr>
+            <tr>
+                <td>Linha2 Coluna2</td>
+                <td>Linha2 Coluna3</td>
+                <td>Linha2 Coluna4</td>
+            </tr>
+            <tr>
+                <th rowspan="2">Coluna vertical</th>
+                <td>Linha3 Coluna2</td>
+                <td>Linha3 Coluna3</td>
+                <td>Linha3 Coluna4</td>
+            </tr>
+            <tr>
+                <td>Linha4 Coluna2</td>
+                <td>Linha4 Coluna3</td>
+                <td>Linha4 Coluna4</td>
+            </tr>
+        </thead>
+        <tfoot>
+            <tr>
+                <td colspan="5" style="background-color: yellowgreen; text-align: center;"> Rodapé com 5 colspan</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+</html>
